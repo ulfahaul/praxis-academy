@@ -1,0 +1,95 @@
+Masuk ke terminal / console dan kerjakan beberapa perintah berikut melalui command line / shell: 
+silahkan coba beberapa perintah di Guru99 dan E-Guide - PDF, minimal 10 perintah.
+
+Jawab:
+
+1) Listing files (ls)
+
+If you want to see the list of files on your UNIX or Linux system, use the ‘ls’ command.
+It shows the files /directories in your current directory.
+
+Berikut hasilnya:
+Desktop    Downloads  Pictures        Public     Videos
+Documents  Music      praxis-academy  Templates
+
+2) Listing subdirectories files 
+
+You can use ‘ls -R’ to shows all the files not only in directories but also subdirectories 
+
+Berikut hasilnya:
+.:
+Desktop    Downloads  Pictures        Public     Videos
+Documents  Music      praxis-academy  Templates
+
+./Desktop:
+
+./Documents:
+jajal
+
+./Downloads:
+
+./Music:
+
+./Pictures:
+
+./praxis-academy:
+kemampuan-dasar-1
+
+./praxis-academy/kemampuan-dasar-1:
+latihan
+
+./praxis-academy/kemampuan-dasar-1/latihan:
+env.txt  kernel.txt
+
+./Public:
+
+./Templates:
+
+./Videos:
+
+3)Listing Hidden File
+To view hidden files, use the command 'ls -a'
+Berikut hasilnya:
+.              Desktop      .mozilla                   Templates
+..             Documents    Music                      .themes
+.bash_history  Downloads    Pictures                   Videos
+.bash_logout   .gnupg       .pki                       .vscode
+.bashrc        .gtkrc-2.0   praxis-academy             .Xauthority
+.cache         .gtkrc-xfce  .profile                   .xsession-errors
+.cinnamon      .linuxmint   Public                     .xsession-errors.old
+.config        .local       .sudo_as_admin_successful
+
+4)Creating File
+To create a new file, use the command
+    cat > filename
+Contoh : cat > njajal
+
+    Add content
+Misal : Ini hanya coba-coba
+    Press ‘ctrl + d’ to return to command prompt.
+
+5)View File
+To view a file, use the command
+'cat filename'
+
+Contoh : cat njajal akan muncul sebagai berikut: Ini hanya coba-coba
+
+6)Deleting File
+The ‘rm’ command removes files from the system without confirmation.
+To remove a file use syntax –
+rm filename
+
+Contoh: rm njajal
+maka file yang tadinya ada akan terhapus
+
+7)Creating Directories
+Directories can be created on a Linux operating system using the following command
+'mkdir directoryname'
+
+Perintah tersebut akan membuat subdirektori
+
+Contoh mkdir mydirectory
+
+
+
+
