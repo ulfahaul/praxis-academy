@@ -1,0 +1,152 @@
+Mango CRUD (Create, Read, Update, Delete)
+
+1. Start MongoDB
+    ulfah@ulfah-Inspiron-14-3467:~$ sudo systemctl start mongod
+
+2. Membuka shell mongo
+    ulfah@ulfah-Inspiron-14-3467:~$ mongo
+    MongoDB shell version v4.4.14
+    connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+    Implicit session: session { "id" : UUID("d2e5cb7d-6e6c-466d-8103-7b1a9839046e") }
+    MongoDB server version: 4.4.14
+    ---
+    The server generated these startup warnings when booting: 
+            2022-05-30T13:16:48.828+07:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+            2022-05-30T13:16:50.695+07:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+    ---
+    ---
+            Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+            metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+            The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+            and anyone you share the URL with. MongoDB may use this information to make product
+            improvements and to suggest MongoDB products and deployment options to you.
+
+            To enable free monitoring, run the following command: db.enableFreeMonitoring()
+            To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+    ---
+    > show dbs
+    admin   0.000GB
+    config  0.000GB
+    local   0.000GB
+    > use hr
+    switched to db hr
+
+3. Memasukkan atau membuat data tunggal, menggunakan "insertOne" atau "insert"
+    > db.employees.insert({
+    ... "employeeNumber" : 1,
+    ... "firstName": "Ulfah",
+    ... "lastName": "Aulia",
+    ... "Company": "GMMTV",
+    ... "age" : 23
+    ... })
+    WriteResult({ "nInserted" : 1 })
+
+4. Menampilkan data, menggunakan "find({})"
+    > db.employees.find({})
+    { "_id" : ObjectId("62946d4cd8dbccc9ff7dfd39"), "employeeNumber" : 1, "firstName" : "Ulfah", "lastName" : "Aulia", "Company" : "GMMTV", "age" : 23 }
+
+5. Menampilkan data agar tampilannya lebih rapi, menggunakan "find({}).pretty()"
+    > db.employees.find({}).pretty()
+    {
+	    "_id" : ObjectId("62946d4cd8dbccc9ff7dfd39"),
+	    "employeeNumber" : 1,
+	    "firstName" : "Ulfah",
+	    "lastName" : "Aulia",
+	    "Company" : "GMMTV",
+	    "age" : 23
+    }
+
+6. Memasukkan data banyak, menggunakan "insertMany"
+    > db.employees.insertMany([{
+    ... "employeeNumber": 2,
+    ... "firstName": "Anabul",
+    ... "lastName": "Gembul",
+    ... "Company": "Felibite",
+    ... "age": 20
+    ... },{
+    ... "employeeNumber": 3,
+    ... "firstName": "New",
+    ... "lastName": "Thitipoom",
+    ... "Company": "GMMTV",
+    ... "age": 29
+    ... }])
+    {
+	    "acknowledged" : true,
+	    "insertedIds" : [
+		    ObjectId("629472e2addfa7b67ee6abfa"),
+		    ObjectId("629472e2addfa7b67ee6abfb")
+	    ]
+    }
+
+7. Menampilkan salah satu data
+   > db.employees.findOne({"firstName": "Anabul"})
+    {
+	    "_id" : ObjectId("629472e2addfa7b67ee6abfa"),
+	    "employeeNumber" : 2,
+	    "firstName" : "Anabul",
+	    "lastName" : "Gembul",
+	    "Company" : "Felibite",
+	    "age" : 20
+    }
+
+8. Mengupdate data, menggunakan "update"
+   > db.employees.update({"_id" : ObjectId("629472e2addfa7b67ee6abfa")}, {$set:{"Company":"Royal Canin Indonesia"}})
+    WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+   Berikut data setelah diupdate
+   > db.employees.find({}).pretty()
+    {
+	    "_id" : ObjectId("62946d4cd8dbccc9ff7dfd39"),
+	    "employeeNumber" : 1,
+	    "firstName" : "Ulfah",
+	    "lastName" : "Aulia",
+	    "Company" : "GMMTV",
+	    "age" : 23
+    }
+    {
+	    "_id" : ObjectId("629472e2addfa7b67ee6abfa"),
+	    "employeeNumber" : 2,
+	    "firstName" : "Anabul",
+	    "lastName" : "Gembul",
+	    "Company" : "Royal Canin Indonesia",
+	    "age" : 20
+    }
+    {
+	    "_id" : ObjectId("629472e2addfa7b67ee6abfb"),
+	    "employeeNumber" : 3,
+	    "firstName" : "New",
+	    "lastName" : "Thitipoom",
+	    "Company" : "GMMTV",
+	    "age" : 29
+}
+
+9. Menghapus 1 data , menggunakan "deleteOne"
+   > db.employees.deleteOne({"employeeNumber": 2})
+    { "acknowledged" : true, "deletedCount" : 1 }
+   
+   Berikut data setelah dihapus
+   > db.employees.find({}).pretty()
+    {
+	    "_id" : ObjectId("62946d4cd8dbccc9ff7dfd39"),
+	    "employeeNumber" : 1,
+	    "firstName" : "Ulfah",
+	    "lastName" : "Aulia",
+	    "Company" : "GMMTV",
+	    "age" : 23
+    }
+    {
+	    "_id" : ObjectId("629472e2addfa7b67ee6abfb"),
+	    "employeeNumber" : 3,
+	    "firstName" : "New",
+	    "lastName" : "Thitipoom",
+	    "Company" : "GMMTV",
+	    "age" : 29
+    }
+
+    
+
+
+
+
+
