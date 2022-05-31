@@ -1,0 +1,137 @@
+Using Virtual Environment
+
+sudo apt install python3-virtualenv
+[sudo] password for ulfah:             
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  python3-appdirs python3-distlib python3-filelock python3-importlib-metadata
+  python3-more-itertools python3-zipp
+The following NEW packages will be installed:
+  python3-appdirs python3-distlib python3-filelock python3-importlib-metadata
+  python3-more-itertools python3-virtualenv python3-zipp
+0 upgraded, 7 newly installed, 0 to remove and 302 not upgraded.
+Need to get 252 kB of archives.
+After this operation, 1.304 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-appdirs all 1.4.3-2.1 [10,8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-distlib all 0.3.0-1 [116 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-filelock all 3.0.12-2 [7.948 B]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-more-itertools all 4.2.0-1build1 [39,4 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-zipp all 1.0.0-1 [5.312 B]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-importlib-metadata all 1.5.0-1 [9.992 B]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-virtualenv all 20.0.17-1ubuntu0.4 [62,7 kB]
+Fetched 252 kB in 2s (107 kB/s)              
+Selecting previously unselected package python3-appdirs.
+(Reading database ... 282106 files and directories currently installed.)
+Preparing to unpack .../0-python3-appdirs_1.4.3-2.1_all.deb ...
+Unpacking python3-appdirs (1.4.3-2.1) ...
+Selecting previously unselected package python3-distlib.
+Preparing to unpack .../1-python3-distlib_0.3.0-1_all.deb ...
+Unpacking python3-distlib (0.3.0-1) ...
+Selecting previously unselected package python3-filelock.
+Preparing to unpack .../2-python3-filelock_3.0.12-2_all.deb ...
+Unpacking python3-filelock (3.0.12-2) ...
+Selecting previously unselected package python3-more-itertools.
+Preparing to unpack .../3-python3-more-itertools_4.2.0-1build1_all.deb ...
+Unpacking python3-more-itertools (4.2.0-1build1) ...
+Selecting previously unselected package python3-zipp.
+Preparing to unpack .../4-python3-zipp_1.0.0-1_all.deb ...
+Unpacking python3-zipp (1.0.0-1) ...
+Selecting previously unselected package python3-importlib-metadata.
+Preparing to unpack .../5-python3-importlib-metadata_1.5.0-1_all.deb ...
+Unpacking python3-importlib-metadata (1.5.0-1) ...
+Selecting previously unselected package python3-virtualenv.
+Preparing to unpack .../6-python3-virtualenv_20.0.17-1ubuntu0.4_all.deb ...
+Unpacking python3-virtualenv (20.0.17-1ubuntu0.4) ...
+Setting up python3-more-itertools (4.2.0-1build1) ...
+Setting up python3-filelock (3.0.12-2) ...
+Setting up python3-distlib (0.3.0-1) ...
+Setting up python3-zipp (1.0.0-1) ...
+Setting up python3-appdirs (1.4.3-2.1) ...
+Setting up python3-importlib-metadata (1.5.0-1) ...
+Setting up python3-virtualenv (20.0.17-1ubuntu0.4) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+## Membuat Virtual Environment ##
+
+1. mkdrir flask
+2. cd flask
+3. virtualenv Env
+ulfah@ulfah-Inspiron-14-3467:~/flask$ virtualenv env
+/home/ulfah/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+created virtual environment CPython3.8.10.final.0-64 in 429ms
+  creator CPython3Posix(dest=/home/ulfah/flask/env, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, pkg_resources=latest, via=copy, app_data_dir=/home/ulfah/.local/share/virtualenv/seed-app-data/v1.0.1.debian.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+## Mengaktifkan Environment ##
+
+ulfah@ulfah-Inspiron-14-3467:~/flask$ source env/bin/activate
+(env) ulfah@ulfah-Inspiron-14-3467:~/flask$  (jika berhasil maka didepannya akan ada tanda env nya)
+
+## Menginstall Flask ##
+
+(env) ulfah@ulfah-Inspiron-14-3467:~/flask$ pip install flask
+Collecting flask
+  Using cached Flask-2.1.2-py3-none-any.whl (95 kB)
+Collecting Werkzeug>=2.0
+  Using cached Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+Collecting importlib-metadata>=3.6.0; python_version < "3.10"
+  Using cached importlib_metadata-4.11.4-py3-none-any.whl (18 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting click>=8.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.8.0-py3-none-any.whl (5.4 kB)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Installing collected packages: Werkzeug, zipp, importlib-metadata, MarkupSafe, Jinja2, itsdangerous, click, flask
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.1.2 click-8.1.3 flask-2.1.2 importlib-metadata-4.11.4 itsdangerous-2.1.2 zipp-3.8.0
+
+
+## Uji Flask ##
+
+(env) ulfah@ulfah-Inspiron-14-3467:~/flask$ nano hello.py
+di enter kemudian akan masuk ke GNU nya
+Isikan script berikut:
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+        return "Hello World"
+
+if __name__ == "__main__":
+        app.run(debug=True)
+
+tekan CTRL + C
+kemudian panggil
+
+(env) ulfah@ulfah-Inspiron-14-3467:~/flask$ python hello.py
+ * Serving Flask app 'hello' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 985-369-894
+
+
+Running on http://127.0.0.1:5000 link tersebut di klik jika berhasil nanti akan muncul tulisan Hello World
+
+pada terminal akan muncul
+127.0.0.1 - - [31/May/2022 09:50:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 09:50:18] "GET /favicon.ico HTTP/1.1" 404 -
+
+Jika ingin keluar dari environment, ketikkan deactivate
+
+
