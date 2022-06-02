@@ -1,0 +1,150 @@
+ulfah@ulfah-Inspiron-14-3467:~$ sudo rm /etc/apt/preferences.d/nosnap.pref
+[sudo] password for ulfah:             
+ulfah@ulfah-Inspiron-14-3467:~$ sudo apt update
+Hit:1 http://packages.microsoft.com/repos/code stable InRelease                
+Hit:2 http://archive.canonical.com/ubuntu focal InRelease                      
+Hit:3 http://repository.spotify.com stable InRelease                           
+Ign:4 http://packages.linuxmint.com una InRelease                              
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]      
+Hit:6 http://packages.linuxmint.com una Release                                
+Ign:8 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 InRelease      
+Hit:9 https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 Release        
+Hit:11 http://archive.ubuntu.com/ubuntu focal InRelease                        
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]       
+Get:13 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [40,6 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [66,3 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]       
+Get:15 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]    
+Get:16 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [2.464 B]
+Get:15 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]     
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Ign:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages      
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [660 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [660 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [337 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [278 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [680 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages   
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [926 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [926 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [926 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [390 kB]
+Ign:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20,7 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [944 B]
+Get:26 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7.984 B]
+Get:27 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [23,8 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13,3 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30,5 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [860 B]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1.833 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [680 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages   
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [390 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [390 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages   
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [843 kB]
+Fetched 2.296 kB in 37min 53s (1.009 B/s)                                      
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+315 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ulfah@ulfah-Inspiron-14-3467:~$ sudo apt install snapd
+[sudo] password for ulfah:             
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  snapd
+0 upgraded, 1 newly installed, 0 to remove and 315 not upgraded.
+Need to get 34,3 MB of archives.
+After this operation, 147 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 snapd amd64 2.54.3+20.04.1ubuntu0.3 [34,3 MB]
+Fetched 12,1 MB in 1h 3min 33s (3.167 B/s)                                     
+Selecting previously unselected package snapd.
+(Reading database ... 282788 files and directories currently installed.)
+Preparing to unpack .../snapd_2.54.3+20.04.1ubuntu0.3_amd64.deb ...
+Unpacking snapd (2.54.3+20.04.1ubuntu0.3) ...
+Setting up snapd (2.54.3+20.04.1ubuntu0.3) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.apparmor.servi
+ce → /lib/systemd/system/snapd.apparmor.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.autoimport.ser
+vice → /lib/systemd/system/snapd.autoimport.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.core-fixup.ser
+vice → /lib/systemd/system/snapd.core-fixup.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.recovery-choos
+er-trigger.service → /lib/systemd/system/snapd.recovery-chooser-trigger.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.seeded.service
+ → /lib/systemd/system/snapd.seeded.service.
+Created symlink /etc/systemd/system/cloud-final.service.wants/snapd.seeded.servi
+ce → /lib/systemd/system/snapd.seeded.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.service → /lib
+/systemd/system/snapd.service.
+Created symlink /etc/systemd/system/timers.target.wants/snapd.snap-repair.timer 
+→ /lib/systemd/system/snapd.snap-repair.timer.
+Created symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /lib/sys
+temd/system/snapd.socket.
+Created symlink /etc/systemd/system/final.target.wants/snapd.system-shutdown.ser
+vice → /lib/systemd/system/snapd.system-shutdown.service.
+snapd.failure.service is a disabled or a static unit, not starting it.
+snapd.snap-repair.service is a disabled or a static unit, not starting it.
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.1) ...
+Processing triggers for desktop-file-utils (0.24+linuxmint1) ...
+ulfah@ulfah-Inspiron-14-3467:~$ sudo snap install postman
+[sudo] password for ulfah:             
+2022-06-02T16:18:29+07:00 INFO Waiting for automatic snapd restart...
+postman (v9/stable) 9.19.0 from Postman, Inc. (postman-inc✓) installed
+ulfah@ulfah-Inspiron-14-3467:~$ 
+
+
