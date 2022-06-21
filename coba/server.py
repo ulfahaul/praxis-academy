@@ -43,7 +43,10 @@ def get_some_users():
 def create_user():
     user = {
         "name": request.form["name"], 
-        "lastName": request.form["lastName"]}
+        "lastName": request.form["lastName"],
+        "company": request.form["company"],
+        "age": request.form["age"]
+        }
     dbResponse = db.users.insert_one(user)
     print(dbResponse.inserted_id)
         #for attr in dir(dbResponse):
